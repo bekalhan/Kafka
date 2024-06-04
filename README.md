@@ -20,7 +20,9 @@ we will take an in-depth look at how to use Kafka, how to configure it, and what
 
 Go to the notification service, you will see the infra-setup folder. Open this folder in the terminal and execute this command:
 
-
+```bash
+docker-compose up
+```
 
 when execute this command you will see this screen
 
@@ -31,6 +33,10 @@ check if you have an issue to do that execute this command
 
 
 when execute this command you will see this screen
+
+```bash
+docker container ls
+```
 
 <img width="1434" alt="dockercontainerls" src="https://github.com/bekalhan/kafka-spring/assets/77151270/fdff8a85-caa6-49c9-b9c4-d37d03280351">
 
