@@ -20,7 +20,7 @@ we will take an in-depth look at how to use Kafka, how to configure it, and what
 
 Go to the notification service, you will see the infra-setup folder. Open this folder in the terminal and execute this command:
 
-```bash
+```sh
 docker-compose up
 
 
@@ -31,8 +31,8 @@ when execute this command you will see this screen
 
 check if you have an issue to do that execute this command
 
-   ```bash
-   docker container ls
+ ```sh
+docker container ls
 
 when execute this command you will see this screen
 
