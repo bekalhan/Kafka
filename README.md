@@ -1,30 +1,28 @@
-# How to use kafka with spring boot
+# How to use Kafka with Spring Boot
 
-[system_architecture](https://github.com/bekalhan/kafka-spring/assets/77151270/f300c5e3-6911-4d5e-9d49-1574574f120d)
-
+![system_architecture](https://github.com/bekalhan/kafka-spring/assets/77151270/f300c5e3-6911-4d5e-9d49-1574574f120d)
 
 ## Açıklama
 
-During this project, I learned and learned how to use kafka with spring boot and I intend to collect all the information here.If you want to know how I can configure this repo and how I can test it, please
-check out this repository -> [Example of Kafka] (https://github.com/muhammedsedef/Kafka-Example?tab=readme-file ). If I need to summarize this repository, there are 3 microservices
-this is the name user service, the address service, and the notification. Our goal is that when the user is created from the user service, we really want to create a new address and notification while doing so.Together with this project
-with the spring boot project, we will take an in-depth look at how to use kafka, how to configure it, and what event-driven communication in microservices is really about.
+During this project, I learned and learned how to use Kafka with Spring Boot and I intend to collect all the information here. If you want to know how to configure this repo and how to test it, please
+check out this repository -> [Example of Kafka](https://github.com/muhammedsedef/Kafka-Example?tab=readme-file). If I need to summarize this repository, there are 3 microservices:
+the user service, the address service, and the notification service. Our goal is that when the user is created from the user service, we want to create a new address and notification as well. Together with this project,
+we will take an in-depth look at how to use Kafka, how to configure it, and what event-driven communication in microservices is really about.
 
-
-- [Starting with docker](#Starting with docker compose)
-- [Couchbase](#Couchbase)
-- [Kafka](#Kafka-ui)
-- [Event Flow](#Event flow)
+- [Starting with Docker Compose](#starting-with-docker-compose)
+- [Couchbase](#couchbase)
+- [Kafka UI](#kafka-ui)
+- [Event Flow](#event-flow)
 - [Lisans](#lisans)
 - [İletişim](#iletişim)
 
+## Starting with Docker Compose
 
-## Starting with docker compose
+Go to the notification service, you will see the infra-setup folder. Open this folder in the terminal and execute this command:
 
-go notification service you see infra-setup go into this folder and open this folder into terminal and execute this command
+```bash
+docker-compose up
 
-   ```bash
-   docker-compose up
 
 when execute this command you will see this screen
 
