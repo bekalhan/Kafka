@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory;
 import org.springframework.kafka.core.ConsumerFactory;
 import org.springframework.kafka.core.DefaultKafkaConsumerFactory;
+import org.springframework.kafka.support.converter.JsonMessageConverter;
 import org.springframework.kafka.support.converter.StringJsonMessageConverter;
 
 import java.util.HashMap;
@@ -41,7 +42,7 @@ public class UserCreatedKafkaConsumerConfiguration<T> {
         ConcurrentKafkaListenerContainerFactory<String, T> factory
                 = new ConcurrentKafkaListenerContainerFactory<>();
         factory.setConsumerFactory(consumerFactory());
-        //factory.setMessageConverter(new StringJsonMessageConverter());
+        factory.setRecordMessageConverter(new JsonMessageConverter());
         return factory;
     }
 }
